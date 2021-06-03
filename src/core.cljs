@@ -117,9 +117,10 @@
       [:div
        [undo-button]
        [redo-button]]
-      (for [{:keys [idx entry]} todo-list]
-        ^{:key idx}
-        [todo-item {:id idx :entry entry}])]]))
+      [:div.todo-list
+       (for [{:keys [idx entry]} todo-list]
+         ^{:key idx}
+         [todo-item {:id idx :entry entry}])]]]))
 
 (rdom/render
  [main-page]
