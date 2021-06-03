@@ -1,0 +1,6 @@
+{:builds {:app {:target :browser
+                :output-dir "public/assets/app/js"
+                :asset-path "/assets/app/js"
+                :modules {:main {:entries [core]}}
+                :devtools {:watch-dir "public/assets/app/css"}
+                :compiler-options {:optimizations :advanced}}}}
