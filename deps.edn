@@ -7,5 +7,7 @@
         thheller/shadow-cljs {:mvn/version "2.14.2"}}
 
  :aliases {:shadow {:extra-deps {thheller/shadow-cljs {:mvn/version "2.14.2"}}}
+           :watch {:extra-paths ["build"]
+                   :main-opts ["-m" "watch"]}
            :build {:extra-paths ["build"]
                    :main-opts ["-m" "build"]}}}

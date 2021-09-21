@@ -1,5 +1,8 @@
 (ns build
-  (:require [shadow.cljs.devtools.api :as shadow]))
+  (:require
+    [shadow.cljs.devtools.api :as shadow]))
 
-(defn -main []
+
+(defn -main
+  [& _args]
   (shadow/release :app))
